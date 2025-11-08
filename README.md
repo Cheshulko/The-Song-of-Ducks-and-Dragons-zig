@@ -6,7 +6,7 @@
 | [Quest 02](day02/main.zig): From Complex to Clarity  | 	&#x2705;  | 	&#x2705;  | 	&#x2705;  |
 | [Quest 03](day03/main.zig): The Deepest Fit          | 	&#x2705;  | 	&#x2705;  | 	&#x2705;  |
 | [Quest 04](day04/main.zig): Teeth of the Wind        | 	&#x2705;  | 	&#x2705;  | 	&#x2705;  |
-| [Quest 05](): TBD        | 	TBD  | 	TBD  | 	TBD  |
+| [Quest 05](day05/main.zig): Fishbone Order           | 	&#x2705;  | 	&#x2705;  | 	&#x2705;  |
 | [Quest 06](): TBD              | 	TBD  | 	TBD  | 	TBD  |
 | [Quest 07](): TBD            | 	TBD  | 	TBD  | 	TBD  |
 | [Quest 08](): TBD        | 	TBD  | 	TBD  | 	TBD  |
