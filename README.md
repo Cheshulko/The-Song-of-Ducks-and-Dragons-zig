@@ -15,7 +15,7 @@
 | [Quest 11](day11/main.zig): The Scout Duck Protocol    | 	&#x2705;  | 	&#x2705;  | 	&#x2705;  |
 | [Quest 12](day12/main.zig): One Spark to Burn Them All |  &#x2705;  | 	&#x2705;  | 	&#x2705;  |
 | [Quest 13](day13/main.zig): Unlocking the Mountain     | 	&#x2705;  | 	&#x2705;  | 	&#x2705;  |
-| [Quest 14](): TBD              | 	TBD  | 	TBD  | 	TBD  |
+| [Quest 14](day14/main.zig): The Game of Light          | 	&#x2705;  | 	&#x2705;  | 	&#x2705;  |
 | [Quest 15](): TBD      | 	TBD  | 	TBD  | 	TBD  |
 | [Quest 16](): TBD             | 	TBD  | 	TBD  | 	TBD  |
 | [Quest 17](): TBD               | 	TBD  | 	TBD  | 	TBD  |
