@@ -26,13 +26,13 @@ const Graph = struct {
         return self.connections.items.len;
     }
 
-    fn dfs(self: *const Graph, case: ?*const Case, cur: usize, hack: bool) i64 {
+    fn dfs(self: *const Graph, case: ?*const Case, cur: usize) i64 {
         var in: i64 = 0;
         for (self.connections.items[cur].items) |to_con| {
             if (to_con.to) |to| {
-                const to_in = self.dfs(case, to, hack);
+                const to_in = self.dfs(case, to);
 
-                in += if (hack) @max(0, to_in * to_con.thickness) else to_in * to_con.thickness;
+                in += to_in * to_con.thickness;
             } else {
                 in += to_con.thickness;
             }
@@ -225,7 +225,7 @@ fn solve_1(allocator: std.mem.Allocator, input: Input) ![]const u8 {
     const n = input.graph.plants();
     const last = n - 1;
 
-    const answer = input.graph.dfs(null, last, false);
+    const answer = input.graph.dfs(null, last);
     const result = try std.fmt.allocPrint(allocator, "{}", .{answer});
 
     return result;
@@ -237,7 +237,7 @@ fn solve_2(allocator: std.mem.Allocator, input: Input) ![]const u8 {
 
     var answer: i64 = 0;
     for (input.cases.?.items) |*case| {
-        answer += input.graph.dfs(case, last, false);
+        answer += input.graph.dfs(case, last);
     }
 
     const result = try std.fmt.allocPrint(allocator, "{}", .{answer});
@@ -253,7 +253,7 @@ fn solve_3(allocator: std.mem.Allocator, input: Input) ![]const u8 {
 
     var answer: i64 = 0;
     for (input.cases.?.items) |*case| {
-        const result = input.graph.dfs(case, last, false);
+        const result = input.graph.dfs(case, last);
         if (result > 0) {
             answer += best - result;
         }
